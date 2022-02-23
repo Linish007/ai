@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Contact Collins Ushi via a form or his email address">
+    <title>Ushi - Contact</title>
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc107">
+    <meta name="apple-mobile-web-app-title" content="Resume">
+    <meta name="application-name" content="Ushi's Resume">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#00796b">
+  </head>
+
+  <body>
+   
+    <header class="main-header">
+        <div class="nav-wrapper">
+      <div class="logo">
+        <a href="./index.html">
+
+            <img src="./images/logo.png" alt="Site logo"   >
+      
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+          <li><a href="./skills.html"  >Skills</a></li>
+          <li><a href="#" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+
+    <main>
+
+     
+      <div class="topSection">
+          <div class="wrapper">
+            
+            <div class="topBoxContainer">
+
+                <div class="topBox-only">
+                  <article>
+                      <header>
+                        <h1>Let's get in touch</h1>
+                      </header>
+                      <p>
+                      You can reach me at my email address or send a message via the below contact form.
+
+                      </p>
+
+                      <p>
+                          <strong>E-mail</strong> : u028173k@student.staffs.uk
+                      </p>
+    
+                    </article>
+                </div>
+
+            </div> 
+
+          </div>
+      </div>
+     
+
+      <div class="wrapper">
+      <div class="boxContainer">
+
+           <div class="topBox-only">
+            <section>
+                <header>
+                    <h1>Contact Form</h1>
+                </header>
+                
+                    
+                    <form  class="contactForm" id="contact" autocomplete="off">
+                        <fieldset>
+                            <legend>
+                                
+                                    Please fill out the form correctly.
+                                    <br>
+                                    <small>The fields marked as <strong>*</strong> required.</small>
+                                
+                            </legend>
+                            <p>
+                                <label for="fullName">* Full Name </label>
+                            <input type="text" id="fullName" name="fullName" required> <br />
+                            
+                            </p>
+
+                            <p>
+                                <label for="subject">* Subject </label>
+                            <input type="text" id="subject" name="subject" required > <br />
+                           
+                            </p>
+
+                           <p>
+                            <label for="email">* Email </label>
+                            <input type="email" id="email" name="email" required> <br />
+                            
+                           </p>
+
+                           <p>
+                            <label for="mobile">* Phone </label>
+                            <input type="text" id="mobile" name="mobile" required> <br />
+                            
+                           </p>
+
+                            <p>
+                                <label for="comment">Message <small>(optional)</small> </label>
+                            <textarea id="comment" rows="5" cols="12"></textarea>
+                            </p>
+
+                            <br>
+                            <p class="align-right">
+
+                                <button type="submit" name="submit"  id="contactButton" >Submit</button>
+                             
+                            </p>
+                            
+                        </fieldset>
+
+                    </form>
+
+                </section>
+          </div>
+    
+      
+    
+    </div><!-- #END boxContainer-->
+    </div>
+    </main>
+
+    <footer class="main-footer">
+    <div class="footer-wrapper">
+      <p>
+        <strong>NAME</strong> Collins USHI <br>
+        <strong>E-MAIL</strong> mail@student.staffs.ac.uk
+      </p>
+
+    <br>
+    <hr>
+    <br>
+
+      <div class="align-center">
+        <p> &#169; Copyright 2021, Designed by USHI.</p>
+      </div>
+    </div>
+    </footer>
+
+
+
+    <script>
+      
+      //check whether browser support service workers
+      if ('serviceWorker' in navigator) {
+          //wait until page loaded to avoid delaying rendering
+          window.addEventListener('load', function () {
+              //register service worker
+              navigator.serviceWorker.register('serviceworker.js').then(
+                  function (registration) {
+                      console.log('Service worker registration successful',
+                          registration);
+                  },
+                  function (err) {
+                      console.log('Service worker registration failed', err);
+                  });
+          });
+      } 
+      
+  </script>
+
+  </body>
+</html>

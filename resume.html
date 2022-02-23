@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Resume section displaying Collins Ushi's educational qualification, clubs and technologies.">
+    <title>Ushi - Resume</title>
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc107">
+    <meta name="apple-mobile-web-app-title" content="Resume">
+    <meta name="application-name" content="Ushi's Resume">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#00796b">
+  </head>
+
+  <body>
+   
+    <header class="main-header">
+        <div class="nav-wrapper">
+      <div class="logo">
+        <a href="./index.html">
+
+            <img src="./images/logo.png" alt="Site logo"   >
+      
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#"  class="active">Resume</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+
+    <main>
+
+     
+      <div class="topSection">
+          <div class="wrapper">
+            
+            <div class="topBoxContainer">
+
+                <div class="topBox-only">
+                  <article>
+                      <header>
+                        <h1>Education and Technologies </h1>
+                      </header>
+                      <p>
+                        I have 2 years hands-on experience in UX/UI design and implementation. 
+                        My delivery rate is appreciable as I leverage W3C standards, modern tech trends and stacks in 
+                        executing projects. 
+                       
+                      </p>
+    
+                    </article>
+                </div>
+
+            </div> 
+
+          </div>
+      </div>
+     
+
+      <div class="wrapper">
+      <div class="boxContainer">
+
+       <div class="box box-1">
+        <article>
+          <header>
+            <h1>My Education</h1>
+            <h2>B.Engr Electrical/Computer</h2>
+            <p>
+             I received a bachelor degree in electrical/computer engineering from 
+             the Federal University of Technology, Minna in 2011.
+            </p>
+
+            <p>
+                During school days. I was actively engaged in the following clubs:
+            </p>
+
+            <br>
+
+            <ol type="I">
+                <li>African Caribbean</li>
+                <li>Fight Club</li>
+                <li>Student Union Government (SUG)</li>
+                <li>Innovation Club</li>
+                <li>Touch Lives Club:
+                    <ul class="bullet-list-type">
+                        <li>Social welfare section</li>
+                        <li>Advocacy section</li>
+                    </ul>
+                </li>
+            </ol>
+
+          </header>
+        </article>
+       </div>
+
+
+
+       <div class="table-section">
+          <section>
+          <header>
+            <h1>My Technologies</h1>
+          </header>
+                
+                <table class="stack-table">
+                    <thead>
+                       <tr>
+                           <th>Stack</th>
+                           <th>Proficiency</th>
+                           <th> Description</th>
+                           
+                           
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Excellent</td>
+                            <td>
+                                <span>
+                                 HyperText Markup Language
+                                It is one of the standardised markup languages that 
+                                defines the layout of a webpage
+                                </span>
+                            </td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Excellent</td>
+                            <td>
+                                <span>
+                                    Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages
+                                </span>
+                            </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Very Good</td>
+                            <td>
+                                <span>
+                                    an object-oriented computer programming language commonly used to create interactive effects within web browsers.
+                                </span>
+                            </td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td>Java</td>
+                            <td>Good</td>
+                            <td>
+                                <span>
+                                    A programming language primarily used for Internet-based applications.
+                                </span>
+                            </td>
+                           
+                        </tr>
+
+                        <tr>
+                            <td>PHP</td>
+                            <td>Average</td>
+                            <td>
+                                <span>
+                                    Hypertext Preprocessor is a server side scripting language that is embedded in HTML. It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+                                </span>
+
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+       </div>
+
+
+
+    </div><!-- #END boxContainer-->
+    </div>
+    </main>
+
+    <footer class="main-footer">
+    <div class="footer-wrapper">
+      <p>
+        <strong>NAME</strong> Collins USHI <br>
+        <strong>E-MAIL</strong> mail@student.staffs.ac.uk
+      </p>
+
+    <br>
+    <hr>
+    <br>
+
+      <div class="align-center">
+        <p> &#169; Copyright 2021, Designed by USHI.</p>
+      </div>
+    </div>
+    </footer>
+
+
+
+    <script>
+      
+      //check whether browser support service workers
+      if ('serviceWorker' in navigator) {
+          //wait until page loaded to avoid delaying rendering
+          window.addEventListener('load', function () {
+              //register service worker
+              navigator.serviceWorker.register('serviceworker.js').then(
+                  function (registration) {
+                      console.log('Service worker registration successful',
+                          registration);
+                  },
+                  function (err) {
+                      console.log('Service worker registration failed', err);
+                  });
+          });
+      } 
+      
+  </script>
+
+  </body>
+</html>

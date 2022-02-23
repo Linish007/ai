@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta
+      name="description"
+      content="Play think of a number game">
+    <title>Ushi - Think of a number </title>
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc107">
+    <meta name="apple-mobile-web-app-title" content="Resume">
+    <meta name="application-name" content="Ushi's Resume">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#00796b">
+  </head>
+
+  <body>
+   
+    <header class="main-header">
+        <div class="nav-wrapper">
+      <div class="logo">
+        <a href="./index.html">
+
+            <img src="./images/logo.png" alt="Site logo"   >
+      
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html" >Home</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+          <li><a href="./skills.html" class="active">Skills</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+
+    <main>
+
+     
+      <div class="topSection">
+          <div class="wrapper">
+            
+            <div class="topBoxContainer">
+
+                <div class="topBox-left">
+                  <section>
+                      <header>
+                        <h1>Game </h1>
+                        <h2>Think of a Number</h2>
+                      </header>
+                      <p>
+                        In this game, the computer will randomly generate a number between <strong>1 and 100</strong>, 
+                        and the number will be hidden from you. Your task is to guess and insert the guessed number
+                        in the <strong>input box</strong>.
+                        <br>
+                        When you click the <strong>'Guess'</strong> button, a message indicating whether your guess is too high, too low or correct will be shown in a coloured box.
+                        
+                      </p>
+
+                      <div>
+                          <br>
+                            <strong>RULES</strong>
+                            <ol type="a">
+                                <li><small>Do not <strong><em>REFRESH</em></strong> your browser or Click the <strong><em>RESTART</em></strong> Button while playing.</small></li>
+                                <li><small>To start a new game, click the <strong><em>RESTART</em></strong> button.</small></li>                          
+                            </ol>
+                            
+                            <p>
+
+                            <br>
+                            GoodLuck !!!
+                            <br>
+
+                            </p>
+                         
+                      </div>
+
+
+    
+                      
+                    </section>
+                </div>
+
+
+                <div class="topBox-right">
+              
+                  <div class="game-img-container">
+                    
+                    <figure>
+                        <img src="images/toan.svg" alt="Image of hangman game" >
+                        <figcaption><small>Source:</small> <a href="https://www.flaticon.com/"><small>FreePik</small></a></figcaption>
+                    </figure>
+            
+                  </div>
+
+                </div>
+
+            </div> 
+
+          </div>
+      </div>
+     
+
+      <div class="wrapper">
+        <div class="boxContainer">
+
+               <div class="box box-1">
+                <div class="all-game-box">
+                     <form id="form">
+                         <fieldset>
+                             <legend>
+                                 <br>
+                                     <strong>Enter a number between 1 and 100</strong>
+                                 <br>
+                             </legend>
+                             <div class="inline-field">
+                                 <p>
+                                    <label for="guessedNumber">Number</label>
+                                    <input type="text" maxlength="3" minlength="1" name="number" id="guessedNumber">
+                                 </p>
+                             </div>
+
+                            <div class="game-control-holder">
+                              
+                                <button type="button" id="startGuess">GUESS</button>
+
+                                <button  type="button" id="restartButton" class="danger float-right">RESTART</button>
+                            </div>
+
+
+                         </fieldset>
+                     </form>
+
+                     <div class="notice-display-box" >
+                           <div id="msgTextBox">
+                            
+                           </div>
+                     </div>
+                </div>
+               </div>
+        
+        
+        
+               <div class="box box-3 disable-game">
+                <article>
+                  <header>
+                    <h1>Think of a Number</h1>
+                  </header>
+        
+                  <p>
+                    This  game is perfect for those odd moments when you just need
+                    a little something to keep you amused.
+                  </p>
+        
+                  <figure>
+                    <img src="images/toan.svg" alt="Image of think of a number game" >
+                    <figcaption><small>Source:</small> <a href="https://www.flaticon.com/"><small>Xnimrodx</small></a></figcaption>
+                  </figure>
+        
+                  <footer>
+                    <br>
+                    <div class="full-width-holder">
+                      <a class="link-box" href="#"> Explore </a>
+                    </div>
+                  </footer>
+        
+                </article>
+               </div>
+        
+               <div class="box box-2">
+                <article>
+                  <header>
+                    <h1>Hangman</h1>
+                  </header>
+        
+                  <p>
+                  Stimulate your mind by trying to figure out an everyday phrase by guessing letters
+                  to reveal the phrase. 
+                  </p>
+    
+                  <figure>
+                    <img src="images/hangman.svg" alt="Image of hangman game" >
+                    <figcaption><small>Source:</small> <a href="https://www.flaticon.com/"><small>FreePik</small></a></figcaption>
+                  </figure>
+        
+                  <footer>
+                    <br>
+                    <div class="full-width-holder">
+                        <a class="link-box" href="./hangman.html"> Explore </a>
+                    </div>
+                  </footer>
+                </article>
+               </div>
+        
+        
+        </div><!-- #END boxContainer-->
+    </div>
+    </main>
+
+    <footer class="main-footer">
+    <div class="footer-wrapper">
+      <p>
+        <strong>NAME</strong> Collins USHI <br>
+        <strong>E-MAIL</strong> mail@student.staffs.ac.uk
+        <strong>LOCATION</strong> The United Kingdom
+      </p>
+
+    <br>
+    <hr>
+    <br>
+
+      <div class="align-center">
+        <p> &#169; Copyright 2021, Designed by USHI.</p>
+      </div>
+    </div>
+    </footer>
+
+
+ 
+    <script>
+      
+      //check whether browser support service workers
+      if ('serviceWorker' in navigator) {
+          //wait until page loaded to avoid delaying rendering
+          window.addEventListener('load', function () {
+              //register service worker
+              navigator.serviceWorker.register('serviceworker.js').then(
+                  function (registration) {
+                      console.log('Service worker registration successful',
+                          registration);
+                  },
+                  function (err) {
+                      console.log('Service worker registration failed', err);
+                  });
+          });
+      } 
+      
+  </script>
+
+<script src="scripts/toan.js"></script>
+
+  </body>
+</html>
